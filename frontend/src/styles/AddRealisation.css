@@ -1,17 +1,28 @@
 .add-realisation-container {
-  max-width: 600px;
   margin: auto;
-  margin-top: 20rem;
-  padding: 20px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: rgba(87, 122, 147, 0.8);
+  margin-top: 15rem;
+  width: 60vw;
+  height: 50vh;
+  background-color: rgba(87, 122, 147, 0.5);
+  border: 2px solid transparent;
+  padding: 32px 16px;
+  font-size: 14px;
+  font-family: inherit;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-size: 200% 100%;
+  animation: gradient 5s ease infinite;
 }
 
 .add-realisation-form {
   display: flex;
   flex-direction: column;
+  width: 80%;
 }
 
 .h1-addrealisation {
@@ -35,33 +46,34 @@
 }
 
 button {
+  display: flex;
+  justify-content: center;
+  align-self: center;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
   background-color: #007bff;
-  color: white;
+  color: black;
   cursor: pointer;
+  font-family: inherit;
+  color: black;
+  font-weight: 600;
+  width: 50%;
+  background: white;
+  border: 1px solid black;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 5rem;
+  cursor: pointer;
+  box-shadow: #000000 0px 7px 10px -5px inset;
+  border-radius: 6px;
 }
 
 button:hover {
   background-color: #0056b3;
 }
 
-.form-submit-btn {
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  font-family: inherit;
-  color: black;
-  font-weight: 600;
-  width: 40%;
-  background: white;
-  border: 1px solid black;
-  padding: 12px 16px;
-  font-size: inherit;
-  gap: 8px;
-  margin-top: 8px;
-  cursor: pointer;
-  box-shadow: #000000 0px 7px 10px -5px inset;
-  border-radius: 6px;
+label {
+  font-size: 12px;
 }
