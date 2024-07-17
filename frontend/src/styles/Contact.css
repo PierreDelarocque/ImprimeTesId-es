@@ -3,9 +3,7 @@
   margin-top: 1rem;
   width: 90vw;
   height: 80vh;
-  background: linear-gradient(#577a93, #577a93) padding-box,
-    linear-gradient(145deg, transparent 35%, #40c9ff) border-box;
-
+  background-color: rgba(87, 122, 147, 0.5);
   border: 2px solid transparent;
   padding: 32px 16px;
   font-size: 14px;
