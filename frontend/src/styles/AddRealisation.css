@@ -6,7 +6,7 @@
   border: 1px solid #ccc;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: rgba(87, 122, 147, 0.5);
+  background-color: rgba(87, 122, 147, 0.8);
 }
 
 .add-realisation-form {
@@ -14,7 +14,13 @@
   flex-direction: column;
 }
 
+.h1-addrealisation {
+  margin-bottom: 1rem;
+}
+
 .form-group {
+  display: flex;
+  flex-direction: column;
   margin-bottom: 15px;
 }
 
@@ -39,4 +45,23 @@ button {
 
 button:hover {
   background-color: #0056b3;
+}
+
+.form-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-family: inherit;
+  color: black;
+  font-weight: 600;
+  width: 40%;
+  background: white;
+  border: 1px solid black;
+  padding: 12px 16px;
+  font-size: inherit;
+  gap: 8px;
+  margin-top: 8px;
+  cursor: pointer;
+  box-shadow: #000000 0px 7px 10px -5px inset;
+  border-radius: 6px;
 }

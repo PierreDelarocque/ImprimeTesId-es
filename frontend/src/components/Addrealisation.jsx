@@ -29,7 +29,7 @@ function AddRealisation() {
 
   return (
     <div className="add-realisation-container">
-      <h1>Ajouter une Réalisation</h1>
+      <h1 className="h1-addrealisation">Ajouter une Réalisation</h1>
       <form className="add-realisation-form" onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="title">Titre</label>
@@ -53,7 +53,9 @@ function AddRealisation() {
             required
           />
         </div>
-        <button type="submit">Ajouter</button>
+        <button className=".form-submit-btn" type="submit">
+          Ajouter
+        </button>
       </form>
     </div>
   );

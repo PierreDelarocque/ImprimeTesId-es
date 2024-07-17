@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 10rem;
+  
 }
 
 .card-realisation {
@@ -38,8 +38,37 @@ img {
   box-sizing: border-box; 
   width: 80%; 
   margin: 0; 
+  
 }
 
 .realisation-title {
   margin-top: 20rem;
+}
+
+.delete-btn {
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #e74c3c;
+  color: white;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+.add-realisation-link{
+  list-style-type: none;
+  color: white;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 2rem;
+  text-shadow: 4px 4px 5px black;
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem ;
+  margin-bottom: 2rem;
 }
