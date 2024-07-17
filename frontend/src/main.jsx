@@ -9,6 +9,7 @@ import About from "./pages/About";
 import Realisation from "./pages/Realisation";
 import RealisationDetail from "./pages/ReaslisationDetail";
 import Contact from "./pages/Contact";
+import AddRealisation from "./components/Addrealisation";
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact />,
+      },
+      {
+        path: "/add-realisation", // Ajouter la nouvelle route
+        element: <AddRealisation />,
       },
     ],
   },
