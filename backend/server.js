@@ -43,37 +43,6 @@ app.get("/realisation/:id", async (req, res) => {
   }
 });
 
-app.delete("/realisation/:id", async (req, res) => {
-  const { id } = req.params;
-  try {
-    const [result] = await pool.query("DELETE FROM realisation WHERE id = ?", [
-      id,
-    ]);
-    if (result.affectedRows === 0) {
-      return res.status(404).json({ error: "Realisation not found" });
-    }
-    res.status(200).json({ message: "Realisation deleted successfully" });
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-});
-
-app.post("/realisation", async (req, res) => {
-  const { title, url } = req.body;
-  if (!title || !url) {
-    return res.status(400).json({ error: "Please provide title and url" });
-  }
-  try {
-    const [result] = await pool.query(
-      "INSERT INTO realisation (title, url) VALUES (?, ?)",
-      [title, url]
-    );
-    res.status(201).json({ id: result.insertId, title, url });
-  } catch (err) {
-    res.status(500).json({ error: err.message });
-  }
-});
-
 app.get("/contacts", async (req, res) => {
   try {
     const contacts = await pool.query("SELECT * FROM contacts");
