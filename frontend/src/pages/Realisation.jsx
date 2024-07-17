@@ -1,13 +1,16 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-
-import "../styles/Realisation.css";
 import { Link } from "react-router-dom";
+import "../styles/Realisation.css";
 
 function Realisation() {
   const [realisation, setRealisation] = useState([]);
 
   useEffect(() => {
+    fetchRealisations();
+  }, []);
+
+  const fetchRealisations = () => {
     axios
       .get(`${import.meta.env.VITE_API_URL}/realisation`)
       .then((response) => {
@@ -15,7 +18,7 @@ function Realisation() {
         setRealisation(response.data);
       })
       .catch((err) => console.error(err));
-  }, []);
+  };
 
   return (
     <>
